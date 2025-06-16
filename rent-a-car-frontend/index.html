@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Locação de Veículos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Locação de Veículos</h1>
+        <form id="rentForm">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="modelo">Modelo do Veículo</label>
+                <input type="text" id="modelo" name="modelo" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="ano">Ano do Veículo</label>
+                <input type="number" id="ano" name="ano" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tempoAluguel">Tempo de Aluguel</label>
+                <select id="tempoAluguel" name="tempoAluguel" required>
+                    <option value="">Selecione o período</option>
+                    <option value="1 dia">1 dia</option>
+                    <option value="3 dias">3 dias</option>
+                    <option value="1 semana">1 semana</option>
+                    <option value="2 semanas">2 semanas</option>
+                    <option value="1 mês">1 mês</option>
+                </select>
+            </div>
+            
+            <button type="submit">Enviar Locação</button>
+        </form>
+    </div>
+
+    <!-- Spinner e Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <div class="spinner" id="spinner"></div>
+
+    <!-- Modal de Sucesso -->
+    <div class="success-modal" id="successModal">
+        <div class="success-icon">✓</div>
+        <h2 class="success-title">Sua locação foi processada com sucesso</h2>
+        <p class="success-subtitle">Confira seu e-mail para mais informações</p>
+        <button class="close-modal" id="closeModal">Fechar</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

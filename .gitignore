@@ -1,0 +1,32 @@
+# Ignorar pastas e arquivos típicos de builds
+node_modules/
+target/
+bin/
+obj/
+
+# Ignorar arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de configuração de IDEs
+.idea/
+.vscode/
+
+# Ignorar arquivos específicos de funções do Azure (ex: arquivos de logs, builds locais)
+*.log
+*.out
+local.settings.json
+*.publish/
+
+# Outros arquivos temporários ou desnecessários
+*.swp
+scripts.ps1
+*scripts.ps1
+*.env
+.env
+
+# Ignorar scripts.ps1 no diretório rent-car-frontend
+rent-car-frontend/scripts.ps1
+
+# Ignorar scripts.ps1 no diretório rent-car-api
+rent-car-api/scripts.ps1
